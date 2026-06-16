@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/fundoRockCoffe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* LOGIN / CADASTRO / RECUPERAÇÃO */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login{
+    width: 500px;
+    background: rgba(0, 0, 0, 0.92);
+    border: 2px solid #c49a6c;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(196, 154, 108, 0.3);
+}
+
+.guitarra{
+    width: 250px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.logo{
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+h1{
+    color: #e7d0a7;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+p{
+    color: #d9d9d9;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    background: transparent;
+    border: 1px solid #c49a6c;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: #b9b9b9;
+}
+
+button{
+    width: 100%;
+    height: 55px;
+    background: #d8b58b;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+.botao{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #d8b58b;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link{
+    margin-top: 15px;
+}
+
+.link a{
+    color: #d8b58b;
+    text-decoration: none;
+}
+
+.link a:hover{
+    text-decoration: underline;
+}
+
+#mensagem,
+#mensagemRecuperar{
+    color: #d8b58b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* HOME */
+
+.home{
+    display: flex;
+    min-height: 100vh;
+}
+
+/* MENU LATERAL */
+
+.menu-lateral{
+    width: 180px;
+    background: rgba(0, 0, 0, 0.95);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+.logo-menu{
+    width: 70px;
+    margin-bottom: 40px;
+}
+
+.menu-lateral a{
+    color: #d8b58b;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.menu-lateral a:hover{
+    color: white;
+}
+
+/* ÁREA DA IMAGEM */
+
+.area-cardapio{
+    position: relative;
+    flex: 1;
+}
+
+.imagem-home{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* ===== PÁGINA CARDÁPIO ===== */
+
+.pagina-cardapio{
+    display: flex;
+    min-height: 100vh;
+    background-color: black;
+}
+
+/* ===== MENU LATERAL ===== */
+
+.menu-lateral{
+    width: 250px;
+    background: rgba(0,0,0,0.95);
+    border-right: 2px solid #c49a6c;
+    padding-top: 30px;
+}
+.logo-menu{
+    width: 140px;
+    display: block;
+    margin: 0 auto 40px;
+}
+
+.botao-menu{
+    display: block;
+    color: #e7d0a7;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.botao-menu:hover{
+    color: white;
+    background: rgba(196,154,108,0.1);
+}
+
+/* ===== CONTEÚDO ===== */
+
+.conteudo-cardapio{
+    position: relative;
+    flex: 1;
+}
+
+.imagem-cardapio{
+    width: 85%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+/* ÁREAS CLICÁVEIS DO CARDÁPIO */
+
+.btn-lanches{
+    position: absolute;
+    top: 18%;
+    left: 40%;
+    width: 20%;
+    height: 8%;
+}
+
+.btn-cafes{
+    position: absolute;
+    top: 42%;
+    left: 18%;
+    width: 25%;
+    height: 12%;
+}
+
+.btn-bebidas{
+    position: absolute;
+    top: 42%;
+    left: 58%;
+    width: 25%;
+    height: 12%;
+}
+
+.btn-sobremesas{
+    position: absolute;
+    top: 68%;
+    left: 38%;
+    width: 25%;
+    height: 10%;
+}
+.pagina-lanches{
+    background-image: url("../img/fundoRockCoffe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem-lanches{
+    width: 95vw;
+    height: 95vh;
+    object-fit: contain;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+.botao-voltar{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    padding: 20px 40px;
+
+    background: #d8b58b;
+    color: black;
+    text-decoration: none;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    border-radius: 15px;
+
+    z-index: 1000;
+}
+.pagina-lanches{
+    background-image: url("../img/fundoRockCoffe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-lanches{
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+.botao-voltar{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    padding: 12px 20px;
+
+    background: #d8b58b;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    z-index: 1000;
+}
+
+.pagina-cafes{
+    background-image: url("../img/fundoRockCoffe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-cafes{
+    width: 95vw;
+    height: 95vh;
+    object-fit: contain;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.botao-voltar{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    padding: 20px 40px;
+
+    background: #d8b58b;
+    color: black;
+    text-decoration: none;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    border-radius: 15px;
+
+    z-index: 1000;
+}
+.pagina-bebidas{
+    background-image: url("../img/fundoRockCoffe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-bebidas{
+    width: 95vw;
+    height: 95vh;
+    object-fit: contain;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+.pagina-sobremesas{
+    background-image: url("../img/fundoRockCoffe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-sobremesas{
+    width: 95vw;
+    height: 95vh;
+    object-fit: contain;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
