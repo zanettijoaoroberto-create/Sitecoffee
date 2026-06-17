@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Black Vinyl Coffee</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<a href="cardapio.html" class="botao-voltar">
+    ← VOLTAR
+</a>
+    <div class="reserva">
+
+        <h1>RESERVAS</h1>
+
+        <p class="subtitulo">
+            Reserve sua mesa com antecedência!
+        </p>
+
+        <div class="linha">
+
+            <div class="campo">
+                <label>DATA</label>
+                <input type="date">
+            </div>
+
+            <div class="campo">
+                <label>HORÁRIO</label>
+                <input type="time">
+            </div>
+
+        </div>
+
+        <div class="linha">
+
+            <div class="campo">
+                <label>NÚMERO DE PESSOAS</label>
+                <input type="number" placeholder="Digite a quantidade">
+            </div>
+
+            <div class="campo">
+                <label>OBSERVAÇÕES</label>
+                <textarea placeholder="Aniversário, preferência de mesa..."></textarea>
+            </div>
+
+        </div>
+
+        <button id="btnReserva">
+            CONFIRMAR RESERVA
+        </button>
+
+        <p id="mensagemReserva"></p>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>

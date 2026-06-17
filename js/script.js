@@ -7,7 +7,7 @@ if (document.getElementById("btnCadastro")) {
         document.getElementById("mensagem").innerHTML =
         "Cadastro realizado com sucesso!";
 
-    }
+    };
 
 }
 
@@ -23,26 +23,16 @@ if (document.getElementById("btnRecuperar")) {
     }
 
 }
-// ENVIO DE MENSAGEM DE CADASTRO
-if (document.getElementById("btnCadastro")) {
 
-    document.getElementById("btnCadastro").onclick = function () {
+// RESERVA
 
-        document.getElementById("mensagem").innerHTML =
-        "Cadastro realizado com sucesso!";
+if (document.getElementById("btnReserva")) {
 
-    }
+    document.getElementById("btnReserva").onclick = function () {
+
+        document.getElementById("mensagemReserva").innerHTML =
+        "MESA RESERVADA COM SUCESSO!";
+
+    };
 
 } 
-// ENVIO DE MENSAGEM DE RECUPERAÇÃO
-
-if (document.getElementById("btnRecuperar")) {
-
-    document.getElementById("btnRecuperar").onclick = function () {
-
-        document.getElementById("mensagemRecuperar").innerHTML =
-        "Senha alterada com sucesso!";
-
-    }
-
-}
